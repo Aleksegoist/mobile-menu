@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -41,10 +43,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0, 20px;
+  padding: 0 20px;
 }
 
-.navigation .menu-toggle:before {
+.navigation .menu-toggle::before {
   content: '';
   position: absolute;
   width: 30px;
@@ -95,11 +97,11 @@
 }
 
 .navigation ul li.active {
-  transform: translate(30px);
+  transform: translateX(30px);
 }
 
 .navigation.open ul li.active {
-  transform: translate(10px);
+  transform: translateX(10px);
 }
 
 .navigation ul li a {
@@ -160,7 +162,7 @@
 
 .navigation.open ul li a .text {
   opacity: 1;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .navigation ul li.active a .text {
